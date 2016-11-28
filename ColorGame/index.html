@@ -1,0 +1,44 @@
+ø<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Game</title>
+	<link rel="stylesheet" type="text/css" href="color.css">
+<link href="https://fonts.googleapis.com/css?family=Handlee|Josefin+Sans" rel="stylesheet"></head>
+<body>
+<h1>
+THE COLOR GAME 
+<br>
+<span id="colorDisplayed">RGB</span> 
+<br>
+
+
+</h1>
+
+<div id="stripe">
+	<button id="reset">New Colors</button>
+	<span id="message"></span>
+	<button class="mode">Easy</button>
+	<button class="mode selected">Hard</button>
+
+	<button id="Points">0 Points</button>
+</div>
+
+<div id="container">
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+</div>
+<script type="text/javascript" src= "https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.1/howler.js"></script>
+
+<script type="text/javascript">
+	var sound = new Howl({
+  urls: ['bubbles.mp3']
+}).play();
+</script>
+
+<script type="text/javascript" src="colorgame.js"></script>
+</body>
+</html>
